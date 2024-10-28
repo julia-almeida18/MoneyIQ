@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
+/* Tema light */
+:root, :root[data-theme='light'] {
+  --black-color: #000000;
+  --green-color: #198754;
+  --white-color: #fff;
+}
+/* Tema dark */
+:root[data-theme='dark'] {
+  --black-color: #ffffff;
+  --green-color: #198754;
+  --white-color: #171616;
+}
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -13,12 +24,13 @@ body {
   margin:48px 0 0 0;
   font-family: 'Poppins', sans-serif;;
   font-size: 16px;
-  color: black;
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
 
 #toggleTheme {
   font-size:1.5rem ;   /* Tamanho da fonte */
-  color: #198754;
+  color: black; /* muda a cor da LUA/SOL */
   cursor:pointer;   /* muda o ícone de clique */
   transition: ease-in-out .4s;    /* ele dar um "efeito de animações" no elemento */
   float: right;
@@ -49,7 +61,7 @@ img {
 section h2.title {
   position: relative;
   font-size: 25px;
-  color: #198754;
+  color: var(--green-color);
   margin-top: 16px;
   margin-bottom: 32px;
   text-align: center;
@@ -64,7 +76,7 @@ section h2.title::after {
   right: 0;
   margin: auto;
   top: 32px;
-  background-color: #198754;
+  background-color: var(--green-color);
 }
 
 section {
@@ -87,7 +99,7 @@ section {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #fff;
+  background-color: #198754;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -107,7 +119,7 @@ section {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: black;
+    background-color: var(--black-color);
     transition: .5s;
   }
 }
@@ -132,15 +144,17 @@ section {
   height: 0.18rem;
   left: 0;
   top: 32px;
-  background-color: #198754;
+  background-color: var(--green-color);
 }
 
-.nav-logo {
-  color: #198754;
+.nav-logo img {
+    width: 7rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .nav-toggle {
-  color: black;
+  color: var(--black-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -152,7 +166,7 @@ section {
   height: 0.18rem;
   left: 0;
   top: 32px;
-  background-color:#198754;
+  background-color:var(--green-color);
 }
 
 .show {
@@ -176,7 +190,7 @@ section {
 }
 
 .home-title-color {
-  color: #198754;
+  color: var(--green-color);
 }
 
 .home-socials {
@@ -188,11 +202,11 @@ section {
   width: max-content;
   margin-bottom: 16px;
   font-size: 1.5rem;
-  color: black;
+  color: var(--black-color);
 }
 
 .icon:hover {
-  color: #198754;
+  color: var(--green-color);
 }
 
 .home-img {
@@ -206,8 +220,8 @@ section {
 
 .button {
   display: inline-block;
-  background-color: #198754;
-  color: #fff;
+  background-color: var(--green-color);
+  color: var(--white-color);
   padding: .75rem 2.5rem;
   font-weight:600;
   border-radius: .5rem;
@@ -264,7 +278,7 @@ section {
 .skills-icon {
   font-size: 32px;
   margin-right: 16px;
-  color: #198754;
+  color: var(--green-color);
 }
 
 .skills-names {
@@ -276,7 +290,7 @@ section {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color:#198754;
+  background-color:var(--green-color);
   height: .25rem;
   border-radius: .5rem;
   z-index: -10;
@@ -325,31 +339,10 @@ section {
   transform: scale(1.1);
 }
 
-/* contact section*/
-.contact-input {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 16px;
-  border-radius: .5rem;
-  border: 1.5px solid black;
-  outline: none;
-  margin-bottom: 32px;
-}
-
-.contact-button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: auto;
-}
-
 /* footer section*/
 .footer {
-  background-color: black;
-  color: #fff;
+  background-color: var(--black-color);
+  color: var(--white-color);
   text-align: center;
   font-weight: 600;
   padding: 32px 0;
@@ -366,7 +359,7 @@ section {
 
 .footer-icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white-color);
   margin: 0 16px;
 }
 
@@ -458,7 +451,7 @@ section {
     display: none;
   }
   .nav-link {
-    color: black;
+    color: var(--black-color);
   }
   .home {
     padding: 128px 0 32px;
