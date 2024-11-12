@@ -188,7 +188,7 @@ section {
 .home-img {
   position: absolute;
   right: 0;
-  top: 700;
+  bottom: 0;
   width: 260px;
 }
 
@@ -220,11 +220,10 @@ section {
 
 .about-img {
   justify-self: center;
-
 }
 
 .about-img img {
-  width: 300px;
+  width: 200px;
   border-radius: .5rem;
 }
 
