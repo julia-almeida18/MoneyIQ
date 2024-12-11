@@ -127,15 +127,14 @@ section {
     padding: 2rem;
     background-color: black;
     transition: .5s;
+    color: #fff;
   }
+  
   .logo {
     position: fixed;
     top: 6px;
     right: 87%;
     width: 35px;
-  }
-  .nav-logo {
-  display: none; 
   }
   .header-toggle {
     position: fixed;
@@ -170,14 +169,6 @@ section {
   left: 0;
   top: 32px;
   background-color: var(--green-color);
-}
-
-.nav-logo {
-  position: fixed;
-  top: 23px;
-  right: 83%;
-  font-size: 20px;
-  color: var(--green-color);
 }
 
 .nav-toggle {
@@ -370,7 +361,25 @@ section {
 }
 
 /* contact section*/
+.contact-input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: .5rem;
+  border: 1.5px solid var(--black-color);
+  outline: none;
+  margin-bottom: 32px;
+}
 
+.contact-button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto;
+}
 
 /* footer section*/
 .footer {
@@ -404,6 +413,8 @@ section {
 
 
 
+
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
@@ -417,6 +428,12 @@ section {
 @media screen and (min-width: 576px) {
   .home {
     padding: 64px 0 32px;
+  }
+  .home-socials {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    align-self: flex-end;
   }
   .icon {
     margin-bottom: 0;
@@ -449,12 +466,6 @@ section {
     justify-items: center;
     
   }
-  .footer-socials {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -472,6 +483,12 @@ section {
     width: 80px;
     top: 48px;
   }
+  .logo {
+      position: fixed;
+      top: 23px;
+      right: 93%;
+      width: 45px;
+  }
   .nav {
     height: 72px;
   }
@@ -488,13 +505,9 @@ section {
   }
   .nav-link {
     color: var(--black-color);
+    font-size: 16px;
+    
   }
-  .nav-logo {
-    position: fixed;
-    top: 23px;
-    right: 78%;
-    font-size: 20px;
-    }
   .home {
     padding: 128px 0 32px;
   }
@@ -520,7 +533,6 @@ section {
   }
 }
 
-
 @media screen and (min-width: 992px) {
   .bgrid {
     margin-left: auto;
@@ -532,17 +544,14 @@ section {
   .home-img {
     width: 450px;
   }
+
   .me{
     display: block;
   }
 }
 
-@media screen and (min-width:1280px) {
-  .nav-logo {
-    position: fixed;
-    top: 23px;
-    right: 82%;
-    font-size: 20px;
-    color: var(--green-color);
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 30px;
   }
 }
