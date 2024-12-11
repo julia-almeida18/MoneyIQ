@@ -127,7 +127,9 @@ section {
     padding: 2rem;
     background-color: black;
     transition: .5s;
+    color: #fff;
   }
+  
   .logo {
     position: fixed;
     top: 6px;
@@ -152,7 +154,7 @@ section {
 
 .nav-link {
   position: relative;
-  color:var(--white-color);
+  color: white;
 }
 
 .nav-link:hover {
